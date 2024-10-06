@@ -1,0 +1,30 @@
+  
+  section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center; /* Ensures the section is fully visible when scrolling */
+    font-size: 2rem;
+    color: white;
+  }
+
+
+  
+  #about {
+    background-color: #7C93C3;
+    color: #1E2A5E;
+  }
+  
+  #experience {
+    background-color: #3498db; /* Blue */
+  }
+  
+  #projects {
+    background-color: #9b59b6; /* Purple */
+  }
+  
+  #contact {
+    background-color: #e74c3c; /* Red */
+  }
+  

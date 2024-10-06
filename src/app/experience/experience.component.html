@@ -1,0 +1,31 @@
+<div class="grid">
+  @for (exp of experiences; track $index) {
+  <div class="col-3 text-xs">
+    <span>{{ exp.duration }}</span>
+  </div>
+  <div class="col-9 mb-4">
+    <div>
+      <h3 class="mt-0">
+        <strong>{{ exp.position }} · {{ exp.company }}</strong>
+      </h3>
+    </div>
+    <div>
+      <p>{{ exp.description }}</p>
+      @for (task of exp.tasks; track $index) {
+      <p>
+        {{ task }}
+      </p>
+      }
+    </div>
+    <div id="skills" class="inline-flex flex-wrap">
+      @for (skill of exp.techStack; track $index) {
+      <span
+        class="max-w-min text-xs white-space-nowrap surface-ground hover:surface-500 border-round-xl surface-border border-2 m-1 p-1 flex align-items-center justify-content-center"
+      >
+        {{ skill }}
+      </span>
+      }
+    </div>
+  </div>
+  }
+</div>
