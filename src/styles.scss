@@ -1,12 +1,27 @@
+
+@import 'primeflex/primeflex.scss';
+@import '@fontsource/inter';
+
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    scroll-snap-type: y mandatory;
-    background-color: #7C93C3;
-    color: #E1D7B7;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-snap-type: y mandatory;
+  background: linear-gradient(to right, #131c36, #0f172a);
+  color: #94a3b8;
+  transition: background 0.1s ease; 
 }
 
 html {
-    scroll-behavior: smooth;
-    
-  }
+  scroll-behavior: smooth; 
+}
+
+h1, h2, h3, strong {
+  color: #e2e8f0;
+}
+
+h1 {
+  font-family: 'Inter Bold', sans-serif;
+  letter-spacing: -1.2px;
+}
+
