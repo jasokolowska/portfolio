@@ -1,37 +1,13 @@
-<div class="m-auto min-h-screen w-10">
+<div class="mx-8 min-h-screen px-8">
   <div class="lg:flex lg:justify-content-between lg:gap-4 lg:bg-blue-900">
-    <header
-      class="lg:sticky lg:top-0 lg:flex lg:py-8 lg:max-h-screen lg:w-6 lg:flex-col lg:justify-content-between"
-    >
-      <div class="p-2">
-        <h1 class="lg:text-6xl sm:text-6xl p-0 m-0 flex-wrap">
-          <strong>Joanna Sokołowska</strong>
-        </h1>
-        <h2 class="lg:text-lg">Fullstack Engineer</h2>
-        <p class="mt-4 max-w-xs line-height-3 text-base">
-          I focus on building reliable, scalable backend systems while also
-          handling frontend integration when needed, delivering end-to-end
-          solutions.
-        </p>
-        <nav>
-          <ul class="list-none pl-0 py-8">
-            @for (item of navItems; track $index) {
-              <li class="py-3">
-              <app-nav-item [title]="item"></app-nav-item>
-            </li>
-            }
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="lg:w-6 lg:py-8">
-      <app-about id="about" class="py-8 text-base" />
-      <app-experience id="experience" />
-      <!-- <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"></section>
-    <section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"></section> -->
-      <section id="projects"><app-projects /></section>
-      <section id="blog-posts"><app-blog-posts /></section>
-      <section id="contact"><app-contact /></section>
+    <app-header class="lg:w-6"></app-header>
+    <main class="lg:w-6">
+      <section id="about" class="pt-8 line-height-3 p-2" ><app-about class="text-base"/></section>
+      <section id="experience" class="pt-8 line-height-3 p-2">
+        <app-experience />
+      </section>
+      <section id="projects" class="pt-8 line-height-3p-2"><app-projects /></section>
+      <section id="blog" class="pt-8 line-height-3 p-2"><app-blog-posts /></section>
     </main>
   </div>
 </div>

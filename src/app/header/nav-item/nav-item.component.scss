@@ -15,4 +15,9 @@ a:focus .nav-indicator {
     font-family: 'Inter Bold', sans-serif;
     font-weight: 700;
     letter-spacing: 1.4px;
+
 }
+a:link, a:visited, a:hover, a:active { 
+  text-decoration: none; 
+  color: inherit; 
+} 
