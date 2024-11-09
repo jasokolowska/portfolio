@@ -1,4 +1,8 @@
-<a class="hover:text-white-alpha-90 focus:text-white-alpha-90" routerLinkActive="active" [routerLink]="['/']" [fragment]="title.toLowerCase()"
+<a 
+class="hover:text-white-alpha-90 focus:text-white-alpha-90" 
+[routerLink]="['/']" [fragment]="title.toLowerCase()"
+id="{{title.toLocaleLowerCase()+'-nav'}}"
+appSectionHighlight="{{title.toLocaleLowerCase()}}"
   ><span
     class="nav-indicator transition-all mr-4 mb-2 p-0 bg-gray-600 hover:w-2 focus:w-2 focus:bg-gray-200"
   ></span>

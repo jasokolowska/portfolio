@@ -6,18 +6,17 @@
 
 a:hover .nav-indicator,
 a:focus .nav-indicator {
-    border: 0.5px solid;
-    display:inline-block;
     width: 16.6667%;
   }
 
-  .bold-text {
-    font-family: 'Inter Bold', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1.4px;
+.bold-text {
+  font-family: 'Inter Bold', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
 
 }
-a:link, a:visited, a:hover, a:active { 
+a:link, a:visited, a:hover, a:active, a:focus { 
   text-decoration: none; 
+  outline: none;
   color: inherit; 
-} 
+}

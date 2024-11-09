@@ -8,11 +8,12 @@ import { ContactComponent } from "./contact/contact.component";
 import { TagModule } from 'primeng/tag';
 import { HeaderComponent } from "./header/header.component";
 import { NavItemComponent } from "./header/nav-item/nav-item.component";
+import { SectionHighlightDirective } from './header/section-highlight.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, TagModule, RouterOutlet, AboutComponent, ExperienceComponent, ProjectsComponent, BlogPostsComponent, ContactComponent, HeaderComponent, NavItemComponent],
+  imports: [SectionHighlightDirective, RouterModule, TagModule, RouterOutlet, AboutComponent, ExperienceComponent, ProjectsComponent, BlogPostsComponent, ContactComponent, HeaderComponent, NavItemComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

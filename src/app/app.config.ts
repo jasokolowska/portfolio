@@ -8,7 +8,7 @@ import { routes } from './app.routes';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled'}), withHashLocation()),
+    provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled'})),
     provideAnimationsAsync(),
   ],
 };

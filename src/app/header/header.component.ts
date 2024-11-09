@@ -9,29 +9,8 @@ import { NavItemComponent } from './nav-item/nav-item.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent{
   activeSection = '';
 
   navItems = ['ABOUT', 'EXPERIENCE', 'PROJECTS', 'BLOG']
-
-  ngOnInit(): void {
-    const sections = document.querySelectorAll('section');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          this.activeSection = entry.target.id.toUpperCase();
-          console.log('entry.target.id: ', entry.target.id);
-        }
-      })
-    },
-    {
-      root: null,
-      threshold: 0.5,
-    })
-
-    sections.forEach((section) => observer.observe(section))
-  }
-
-
 }

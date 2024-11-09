@@ -2,12 +2,12 @@
   <div class="lg:flex lg:justify-content-between lg:gap-4 lg:bg-blue-900">
     <app-header class="lg:w-6"></app-header>
     <main class="lg:w-6">
-      <section id="about" class="pt-8 line-height-3 p-2" ><app-about class="text-base"/></section>
-      <section id="experience" class="pt-8 line-height-3 p-2">
+      <section id="about" appSectionHighlight="about" class="pt-8 line-height-3 p-2" ><app-about class="text-base"/></section>
+      <section id="experience" appSectionHighlight="experience" class="pt-8 line-height-3 p-2">
         <app-experience />
       </section>
-      <section id="projects" class="pt-8 line-height-3p-2"><app-projects /></section>
-      <section id="blog" class="pt-8 line-height-3 p-2"><app-blog-posts /></section>
+      <section id="projects" appSectionHighlight="projects" class="pt-8 line-height-3p-2"><app-projects /></section>
+      <section id="blog" appSectionHighlight="blog" class="pt-8 line-height-3 p-2"><app-blog-posts /></section>
     </main>
   </div>
 </div>
