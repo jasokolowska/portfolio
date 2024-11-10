@@ -1,1 +1,28 @@
-<p>projects works!</p>
+@for (project of projects; track $index) {
+    <div class="grid hover:bg-white-alpha-10 border-round-md p-2">
+      <div class="col-3 text-sm">
+        <img [src]="project.img" width="127" height="80" class="border-round-md border-1">
+      </div>
+      <div class="col-9 mb-4">
+        <div>
+          <h3 class="mt-0 text-base hover:text-white">
+            <strong>{{ project.title }}</strong>
+          </h3>
+        </div>
+        <div class="text-sm">
+          <p>{{ project.description }}</p>
+        </div>
+        <div id="skills" class="inline-flex flex-wrap">
+          @for (skill of project.techStack; track $index) {
+          <span
+            style="color: #5eead4"
+            class="max-w-min text-xs font-medium white-space-nowrap bg-white-alpha-10 border-round-xl m-1 p-1 flex align-items-center justify-content-center"
+          >
+            {{ skill }}
+          </span>
+          }
+        </div>
+      </div>
+    </div>
+    }
+    

@@ -16,8 +16,4 @@ export class NavItemComponent {
 
   @Input()
   active = false;
-
-  print() {
-    console.log('is item active: ', this.active)
-  }
 }

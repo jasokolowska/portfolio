@@ -21,7 +21,7 @@ export class SectionHighlightDirective implements OnInit, OnDestroy {
           }
         });
       },
-      { threshold: 0.2 } 
+      { threshold: 0.3 } 
     );
 
     this.observer.observe(this.el.nativeElement);
