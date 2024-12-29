@@ -34,7 +34,7 @@ export class ExperienceComponent {
     {
       company: 'Capgemini',
       position: 'Software Engineer',
-      duration: 'June 2022 - Sep 2024',
+      duration: 'Jun 2022 - Sep 2024',
       description:
         'Actively contributed to both backend and frontend development for enterprise-level applications.Spearheaded frontend development using Angular 14+.Contributed to backend development using Java 8+, Spring Boot, and Hibernate.',
       tasks: [],
@@ -56,7 +56,7 @@ export class ExperienceComponent {
     {
       company: 'Intive',
       position: 'Java Intern',
-      duration: 'January 2022 - April 2022',
+      duration: 'Jan 2022 - Apr 2022',
       description:
         'Gained valuable hands-on experience developing backend applications. Built a backend application for creating polls using Java 17, Spring Boot, Docker, and PostgreSQL.',
       tasks: [],
@@ -65,7 +65,7 @@ export class ExperienceComponent {
     {
       company: '3M Wroclaw',
       position: 'Senior Process Engineer',
-      duration: 'September 2013 - May 2022',
+      duration: 'Sep 2013 - May 2022',
       description:
         'Managed and optimized production processes for automated assembly and metal processing.',
       tasks: [
