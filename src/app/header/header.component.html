@@ -1,23 +1,45 @@
 <header
-  class="lg:sticky lg:top-0 lg:bottom-0 lg:flex pt-8 lg:max-h-screen lg:flex-col lg:justify-content-between"
+  class="lg:sticky lg:top-0 lg:bottom-0 lg:flex lg:min-h-screen "
 >
-  <div class="px-2">
-    <h1 class="lg:text-6xl sm:text-6xl p-0 m-0 flex-wrap">
-      <strong>Joanna Sokołowska</strong>
-    </h1>
-    <h2 class="lg:text-lg">Fullstack Engineer</h2>
-    <p class="mt-4 max-w-xs line-height-3 text-base">
-      I focus on building reliable, scalable backend systems while also handling
-      frontend integration when needed, delivering end-to-end solutions.
-    </p>
-    <nav class="hidden lg:block">
-      <ul class="list-none pl-0 py-8 m-0">
-        @for (item of navItems(); track $index) {
-        <li class="py-3">
-          <app-nav-item [title]="item"></app-nav-item>
+  <div class="lg:py-8 lg:flex lg:flex-column lg:justify-content-between">
+    <div class="px-2">
+      <h1 class="lg:text-6xl sm:text-6xl p-0 m-0 flex-wrap">
+        <strong>Joanna Sokołowska</strong>
+      </h1>
+      <h2 class="lg:text-lg">Fullstack Engineer</h2>
+      <p class="mt-4 max-w-xs line-height-3 text-base">
+        I focus on building reliable, scalable backend systems while also
+        handling frontend integration when needed, delivering end-to-end
+        solutions.
+      </p>
+      <nav class="hidden lg:block flex-grow-1">
+        <ul class="list-none pl-0 m-0">
+          @for (item of navItems(); track $index) {
+          <li class="py-3">
+            <app-nav-item [title]="item"></app-nav-item>
+          </li>
+          }
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <ul class="ml-1 mt-5 pl-0 flex align-items-center list-none">
+        <li class="mr-5 shrink-0">
+          <a class="block hover:text-slate-200">
+            <i class="pi pi-github" style="font-size: 1.5rem"></i>
+          </a>
         </li>
-        }
+        <li class="mr-5 shrink-0 text-xs">
+          <a class="block hover:text-slate-200">
+            <i class="pi pi-linkedin" style="font-size: 1.5rem"></i>
+          </a>
+        </li>
+        <li class="mr-5 shrink-0 text-xs">
+          <a class="block hover:text-slate-200">
+            <i class="pi pi-instagram" style="font-size: 1.5rem"></i>
+          </a>
+        </li>
       </ul>
-    </nav>
+    </div>
   </div>
 </header>
