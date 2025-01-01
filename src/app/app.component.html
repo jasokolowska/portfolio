@@ -1,34 +1,34 @@
 <div class="lg:mx-8 min-h-screen lg:px-8 px-4">
   <div class="lg:flex lg:justify-content-between lg:gap-4 lg:bg-blue-900">
-    <app-header class="lg:w-6"></app-header>
+    <app-header class="lg:w-6" [navItems]="navItems"></app-header>
     <main class="lg:w-6">
       <section
         id="about"
         appSectionHighlight="about"
         class="pt-8 line-height-3 p-2"
       >
-        <app-about class="text-base" />
+        <app-about class="text-base" [sectionName]="navItems[0]" />
       </section>
       <section
         id="experience"
         appSectionHighlight="experience"
         class="pt-8 line-height-3 p-2 min-h-screen"
       >
-        <app-experience />
+        <app-experience [sectionName]="navItems[1]" />
       </section>
       <section
         id="projects"
         appSectionHighlight="projects"
         class="pt-8 line-height-3 p-2 min-h-screen"
       >
-        <app-projects />
+        <app-projects [sectionName]="navItems[2]" />
       </section>
       <section
         id="blog"
         appSectionHighlight="blog"
         class="mt-8 line-height-3 p-2 min-h-screen"
       >
-        <app-blog-posts />
+        <app-blog-posts [sectionName]="navItems[3]" />
       </section>
     </main>
   </div>

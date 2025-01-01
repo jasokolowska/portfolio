@@ -19,4 +19,5 @@ import { SectionHighlightDirective } from './header/section-highlight.directive'
 })
 export class AppComponent{
   title = 'portfolio';
+  navItems = ['ABOUT', 'EXPERIENCE', 'PROJECTS', 'BLOG']
 }

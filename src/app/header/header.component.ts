@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, input, Input, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NavItemComponent } from './nav-item/nav-item.component';
 
@@ -7,10 +7,10 @@ import { NavItemComponent } from './nav-item/nav-item.component';
   standalone: true,
   imports: [RouterModule, NavItemComponent],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
-export class HeaderComponent{
+export class HeaderComponent {
   activeSection = '';
 
-  navItems = ['ABOUT', 'EXPERIENCE', 'PROJECTS', 'BLOG']
+  navItems = input<string[]>();
 }

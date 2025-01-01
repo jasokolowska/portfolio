@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ChipModule } from 'primeng/chip';
 import { TagModule } from 'primeng/tag';
+import { SectionHeaderComponent } from "../header/section-header/section-header.component";
 
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [TagModule, ChipModule],
+  imports: [TagModule, ChipModule, SectionHeaderComponent],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
+  sectionName = input<string>()
   experiences = [
     {
       company: 'Fortum Service Polska',

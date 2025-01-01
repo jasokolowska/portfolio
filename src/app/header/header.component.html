@@ -12,7 +12,7 @@
     </p>
     <nav class="hidden lg:block">
       <ul class="list-none pl-0 py-8 m-0">
-        @for (item of navItems; track $index) {
+        @for (item of navItems(); track $index) {
         <li class="py-3">
           <app-nav-item [title]="item"></app-nav-item>
         </li>
