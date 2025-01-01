@@ -1,6 +1,4 @@
-<header
-  class="lg:sticky lg:top-0 lg:bottom-0 lg:flex lg:min-h-screen "
->
+<header class="lg:sticky lg:top-0 lg:bottom-0 lg:flex lg:min-h-screen">
   <div class="lg:py-8 lg:flex lg:flex-column lg:justify-content-between">
     <div class="px-2">
       <h1 class="lg:text-6xl sm:text-6xl p-0 m-0 flex-wrap">
@@ -24,21 +22,19 @@
     </div>
     <div>
       <ul class="ml-1 mt-5 pl-0 flex align-items-center list-none">
+        @for (media of socialMediaData; track $index) {
         <li class="mr-5 shrink-0">
-          <a class="block hover:text-slate-200">
-            <i class="pi pi-github" style="font-size: 1.5rem"></i>
+          <a
+            class="block hover:text-slate-200"
+            [href]="media.src"
+            target="_blank"
+            rel="noreferrer noopener"
+            [title]="media.name"
+          >
+            <i [class]="media.icon" style="font-size: 1.5rem"></i>
           </a>
         </li>
-        <li class="mr-5 shrink-0 text-xs">
-          <a class="block hover:text-slate-200">
-            <i class="pi pi-linkedin" style="font-size: 1.5rem"></i>
-          </a>
-        </li>
-        <li class="mr-5 shrink-0 text-xs">
-          <a class="block hover:text-slate-200">
-            <i class="pi pi-instagram" style="font-size: 1.5rem"></i>
-          </a>
-        </li>
+        }
       </ul>
     </div>
   </div>
