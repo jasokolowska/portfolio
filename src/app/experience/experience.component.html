@@ -2,10 +2,10 @@
 
 @for (exp of experiences; track $index) {
 <div class="grid hover:bg-white-alpha-10 border-round-md p-2">
-  <div class="col-3 text-xs bold-text">
+  <div class="lg:col-3 md:col-3 col-12 text-xs sm:bold-text">
     <span>{{ exp.duration.toUpperCase() }}</span>
   </div>
-  <div class="col-9 mb-4">
+  <div class="lg:col-9 md:col-9 col-12 mb-4">
     <div>
       <h3 class="mt-0 text-base hover:text-white">
         <strong>{{ exp.position }} · {{ exp.company }}</strong>

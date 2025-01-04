@@ -1,23 +1,20 @@
 <app-section-header [sectionName]="sectionName()" />
 @for (project of projects; track $index) {
-<div class="grid hover:bg-white-alpha-10 border-round-md p-2">
-  <div class="col-3 text-sm">
+<div class="grid hover:bg-white-alpha-10 border-round-md p-2 mb-4">
+  <div class="lg:col-3 md:col-3 col-12 flex-order-2 lg:flex-order-1 lg:mt-2 text-sm">
     <img
       [src]="project.img"
-      width="127"
-      height="80"
+      style="width: 100%; height: auto; max-width: 15rem;"
       class="border-round-md border-1"
     />
   </div>
-  <div class="col-9 mb-4">
+  <div class="lg:col-9 md:col-9 col-12 flex-order-1 lg:flex-order-2">
     <div>
-      <h3 class="mt-0 text-base hover:text-white">
+      <h3 class="mt-0 mb-0 text-base hover:text-white">
         <strong>{{ project.title }}</strong>
       </h3>
     </div>
-    <div class="text-sm">
-      <p>{{ project.description }}</p>
-    </div>
+    <p class="mt-2 mb-0 text-sm leading-normal">{{ project.description }}</p>
     <div id="skills" class="inline-flex flex-wrap">
       @for (skill of project.techStack; track $index) {
       <span
