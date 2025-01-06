@@ -13,24 +13,36 @@
         <section
           id="experience"
           appSectionHighlight="experience"
-          class="pt-8 line-height-3 p-2 min-h-screen"
+          class="pt-8 line-height-3 p-2"
         >
           <app-experience [sectionName]="navItems[1]" />
         </section>
         <section
           id="projects"
           appSectionHighlight="projects"
-          class="pt-8 line-height-3 p-2 min-h-screen"
+          class="pt-8 line-height-3 p-2"
         >
           <app-projects [sectionName]="navItems[2]" />
         </section>
         <section
           id="blog"
           appSectionHighlight="blog"
-          class="mt-8 line-height-3 p-2 min-h-screen"
+          class="mt-8 line-height-3 p-2"
         >
           <app-blog-posts [sectionName]="navItems[3]" />
         </section>
+        <footer class="lg:pb-8 px-4 text-sm text-slate-500">
+          <p>
+            © 2025 Joanna Sokołowska. Built with Angular, PrimeNG, and
+            PrimeFlex. Design inspired by
+            <a
+              href="https://brittanychiang.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Brittany Chiang</a
+            >.
+          </p>
+        </footer>
       </main>
     </div>
   </div>
