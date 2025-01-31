@@ -1,17 +1,21 @@
 <app-section-header [sectionName]="sectionName()" />
 @for (project of projects; track $index) {
 <div class="grid hover:bg-white-alpha-10 border-round-md p-2 mb-4">
-  <div class="lg:col-3 md:col-3 col-12 flex-order-2 lg:flex-order-1 lg:mt-2 text-sm">
+  <div
+    class="lg:col-3 md:col-3 col-12 flex-order-2 lg:flex-order-1 lg:mt-2 text-sm"
+  >
     <img
       [src]="project.img"
-      style="width: 100%; height: auto; max-width: 15rem;"
+      style="width: 100%; height: auto; max-width: 15rem"
       class="border-round-md border-1"
     />
   </div>
   <div class="lg:col-9 md:col-9 col-12 flex-order-1 lg:flex-order-2">
     <div>
-      <h3 class="mt-0 mb-0 text-base hover:text-white">
-        <strong>{{ project.title }}</strong>
+      <h3 class="mt-0 mb-0 text-base">
+        <a [href]="project.link" target="_blank" rel="noreferrer noopener"
+          ><strong>{{ project.title }}</strong>
+        </a>
       </h3>
     </div>
     <p class="mt-2 mb-0 text-sm leading-normal">{{ project.description }}</p>

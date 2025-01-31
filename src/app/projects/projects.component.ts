@@ -13,19 +13,11 @@ export class ProjectsComponent {
   projects = [
     {
       img: 'assets/travel-planner-app.png',
-      link: '',
+      link: 'https://github.com/jasokolowska/travel-planner-app',
       title: 'Travel Planner App',
       description:
         'This project covers both frontend and backend. It integrates Google Api for identifing closest airport and Kiwi Api to find cheapest flights.',
-      techStack: ['Java 17', 'Angular'],
-    },
-    {
-      img: 'assets/travel-planner-app.png',
-      link: '',
-      title: 'Travel Planner App',
-      description:
-        'This project covers both frontend and backend. It integrates Google Api for identifing closest airport and Kiwi Api to find cheapest flights.',
-      techStack: ['Java 17', 'Angular'],
-    },
+      techStack: ['Java 17', 'Angular 14', 'Docker', 'Spring Boot', 'PostgreSql', 'Liquibase', 'Mapstruct'],
+    }
   ];
 }
